@@ -1,0 +1,10 @@
+{
+  "name": "zenn",
+  "version": "1.0.0",
+  "author": "Hexin <hexium310@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "zenn-cli": "^0.1.85"
+  }
+}
