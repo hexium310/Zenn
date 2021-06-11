@@ -1,12 +1,4 @@
 {
-  "filters": {
-    "allowlist": {
-      "allow": [
-        "/([一二三四五六七八九十壱弐参拾百〇]+)つ/"
-      ]
-    },
-    "comments": true
-  },
   "rules": {
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "general-novel-style-ja": {
@@ -18,6 +10,7 @@
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
     "ja-hiragana-keishikimeishi": true,
+    "kansuji-yamato-kotoba": true,
     "no-doubled-conjunction": true,
     "no-empty-section": true,
     "no-start-duplicated-conjunction": true,
@@ -33,5 +26,13 @@
       "2.1.6.カタカナの長音": true,
       "3.1.1.全角文字と半角文字の間": false
     }
+  },
+  "filters": {
+    "allowlist": {
+      "allow": [
+        "/([一二三四五六七八九十壱弐参拾百〇]+)つ/"
+      ]
+    },
+    "comments": true
   }
 }

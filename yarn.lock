@@ -6331,6 +6331,10 @@ textlint-rule-ja-unnatural-alphabet@2.0.1:
     match-index "^1.0.1"
     regx "^1.0.4"
 
+textlint-rule-kansuji-yamato-kotoba@hexium310/textlint-rule-kansuji-yamato-kotoba#master:
+  version "1.0.0"
+  resolved "https://codeload.github.com/hexium310/textlint-rule-kansuji-yamato-kotoba/tar.gz/8aa52fb4d6f09cd8a23a59e8285120a84bba834c"
+
 textlint-rule-max-comma@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/textlint-rule-max-comma/-/textlint-rule-max-comma-2.0.2.tgz#c204ae840b436d572d5c24e3a3056776992a882b"
