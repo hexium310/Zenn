@@ -26,10 +26,15 @@ jobs:
     needs:
       - lint
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
       - name: Check updated articles
         run: |
-          git branch release $(git rev-list --max-parents=0 HEAD) 2> /dev/null
-          files=$(git diff --name-only -z release -- {articles,books}/*.md)
+          if git fetch origin release 2> /dev/null; then
+              files=$(git diff --name-only -z origin/release -- {articles,books}/*.md)
+          else
+              files=$(find {articles,books} -name '*.md' -print0)
+          fi
           files=(${(0)files})
           for file in $files; do
               if $(sed -n 6p $file | cut -d \  -f 2); then
