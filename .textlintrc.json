@@ -3,7 +3,7 @@
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "general-novel-style-ja": {
       "chars_leading_paragraph": false,
-      "no_punctuation_at_closing_quote": false,
+      "space_after_marks": false,
       "max_arabic_numeral_digits": false
     },
     "incremental-headers": true,
