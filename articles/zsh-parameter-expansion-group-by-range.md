@@ -8,7 +8,7 @@ published: false
 
 # Zsh 変数展開の紹介〜連続した整数のグループ化〜
 
-Zsh では変数の値をそのまま使うだけでなく、さまざまな加工をしてから使うことができます。変数展開（Parameter Expansion）と呼ばれるこの加工手段は種類が豊富で高度なことを行えます。本記事では[整数配列の連続区間をハイフンで連結してグループ化する定番のアレ - Qiita]を Zsh で実装しながらいくつかの変数展開を紹介していきます。
+Zsh では変数の値をそのまま使うだけでなく、さまざまな加工をしてから使うことができます。変数展開（Parameter Expansion）と呼ばれるこの加工手段は種類が豊富で高度なことを行えます。本記事では [整数配列の連続区間をハイフンで連結してグループ化する定番のアレ - Qiita] を Zsh で実装しながらいくつかの変数展開を紹介していきます。
 
 紹介する変数展開は全て`zshexpn(1)`か以下のリンクからドキュメントを読めます。
 - [14.3 Parameter Expansion]
@@ -484,10 +484,13 @@ $ group-by-range '1 -1 3 -3 5 -5 4 2 -2 -4 -10 -9 -8 8 9 10 -13 -14 20 22 -22 -2
 
 ## 終わりに
 
-文字列の配列化、配列の結合、重複削除、ソート、値の削除や抽出、置換等今回は配列（や文字列）そのものをいじる変数展開を紹介しました。 Zsh には他にも、文字列の大文字小文字を変換するフラグや文字列のクォートをいじるフラグ等便利な変数展開フラグが数十個存在しています。[14.3.1 Parameter Expansion Flags]を参照して面白そうなフラグを試してみるのも良いでしょう。また、今回は機会がなかったため紹介しませんでしたが、配列の添字を指定する際に使う添字フラグも存在しています。どんなものがあるか気になった人は`zshparam(1)`または[15.2.3 Subscript Flags]を確認してみてください。便利な変数展開、一つ覚えるだけでも Zsh 生活を鮮やかにしてくれるでしょう。
+文字列の配列化、配列の結合、重複削除、ソート、値の削除や抽出、置換等今回は配列（や文字列）そのものをいじる変数展開を紹介しました。 Zsh には他にも、文字列の大文字小文字を変換するフラグや文字列のクォートをいじるフラグ等便利な変数展開フラグが数十個存在しています。 [14.3.1 Parameter Expansion Flags] を参照して面白そうなフラグを試してみるのも良いでしょう。また、今回は機会がなかったため紹介しませんでしたが、配列の添字を指定する際に使う添字フラグも存在しています。どんなものがあるか気になった人は`zshparam(1)`または [15.2.3 Subscript Flags] を確認してみてください。便利な変数展開、一つ覚えるだけでも Zsh 生活を鮮やかにしてくれるでしょう。
+
+整数だけでなく文字のグループ化にも対応したものが [Gist][group-by-range Gist] に置いてあります。
 
 
 [整数配列の連続区間をハイフンで連結してグループ化する定番のアレ - Qiita]: https://qiita.com/mpyw/items/0fdffd3c70b3abd802f5
 [14.3 Parameter Expansion]: https://zsh.sourceforge.io/Doc/Release/Expansion.html#Parameter-Expansion
 [14.3.1 Parameter Expansion Flags]: https://zsh.sourceforge.io/Doc/Release/Expansion.html#Parameter-Expansion-Flags
 [15.2.3 Subscript Flags]: https://zsh.sourceforge.io/Doc/Release/Parameters.html#Subscript-Flags
+[group-by-range Gist]: https://gist.github.com/hexium310/76a40d80b7014ca29685350d46667335
