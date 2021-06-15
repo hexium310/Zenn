@@ -3,7 +3,7 @@ title: "Zsh 変数展開の紹介〜連続した整数のグループ化の実�
 emoji: "🏪"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["zsh"]
-published: false
+published: true
 ---
 
 # Zsh 変数展開の紹介〜連続した整数のグループ化の実装〜
