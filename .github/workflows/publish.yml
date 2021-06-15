@@ -36,6 +36,5 @@ jobs:
         run: |
           git config user.email 'hexium310@gmail.com'
           git config user.name 'Hexin'
-          git rebase master release
           git push origin master:release
           echo "Update ${{ env.updated }} article(s)"
