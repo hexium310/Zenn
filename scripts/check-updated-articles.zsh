@@ -1,5 +1,5 @@
 if git fetch origin release 2> /dev/null; then
-    files=$(git diff --name-only -z origin/release -- {articles,books}/*.md)
+    files=$(git diff --name-only -z origin/release -- {articles,books}/*.md(N))
 else
     files=$(find {articles,books} -name '*.md' -print0)
 fi
