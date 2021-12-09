@@ -3,7 +3,7 @@ title: "RRethy/nvim-base16 から必要なカラースキームだけを読み�
 emoji: "🎨"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["neovim"]
-published: false
+published: true
 ---
 
 :::message
