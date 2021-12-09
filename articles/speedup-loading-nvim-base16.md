@@ -6,6 +6,10 @@ topics: ["neovim"]
 published: false
 ---
 
+:::message
+この記事は [Vim Advent Calendar 2021] カレンダー 2 の 10 日目の記事です。
+:::
+
 # 概要
 
 Neovim 用の base16 カラースキームプラグインとして [RRethy/nvim-base16] が存在しています。このプラグインは [chriskempson/base16-vim] と違い、Neovim 組み込みの LSP や Tree-sitter のハイライトグループに対応しています。基本的に Lua で書かれていますが、`:colorscheme` 時に全てのカラースキームの設定を読み込んでおり Neovim の起動時間を増やしています。
@@ -189,6 +193,7 @@ $ cat mini.log | grep base16 | awk '{ print $2 }' >&2 | jq -s 'add/length'
 - [https://www.lua.org/manual/5.1/manual.html#5.3][Lua マニュアル]
 - [https://github.com/neovim/neovim/blob/c4d70dae802ef074aaf54bdcbbd5f73380f74a86/src/nvim/lua/vim.lua#L87][Neovim ローダー]
 
+[Vim Advent Calendar 2021]: https://qiita.com/advent-calendar/2021/vim
 [RRethy/nvim-base16]: https://github.com/RRethy/nvim-base16
 [chriskempson/base16-vim]: https://github.com/chriskempson/base16-vim
 [Neovim ローダー]: https://github.com/neovim/neovim/blob/c4d70dae802ef074aaf54bdcbbd5f73380f74a86/src/nvim/lua/vim.lua#L87
