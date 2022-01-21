@@ -8,7 +8,7 @@
     "lint": "textlint '**/*.md' --ignore-path .gitignore"
   },
   "dependencies": {
-    "zenn-cli": "^0.1.99"
+    "zenn-cli": "^0.1.103"
   },
   "devDependencies": {
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^2.0.1",
