@@ -10,6 +10,11 @@ published: true
 この記事は [Vim Advent Calendar 2021] カレンダー 2 の 10 日目の記事です。
 :::
 
+:::message alert
+RRethy/nvim-base16 の以下のコミットによりカラースキームの遅延読み込みが実装されました。これにより、本記事で紹介しているハックを利用しなくてもカラースキームを高速な読み込みが可能になっています。
+https://github.com/RRethy/nvim-base16/commit/3720bdf0d651bb579ab0f24f889246862fdf8b00
+:::
+
 # 概要
 
 Neovim 用の base16 カラースキームプラグインとして [RRethy/nvim-base16] が存在しています。このプラグインは [chriskempson/base16-vim] と違い、Neovim 組み込みの LSP や Tree-sitter のハイライトグループに対応しています。基本的に Lua で書かれていますが、`:colorscheme` 時に全てのカラースキームの設定を読み込んでおり Neovim の起動時間を増やしています。
