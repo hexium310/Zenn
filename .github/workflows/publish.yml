@@ -19,23 +19,3 @@ jobs:
         run: yarn install
       - name: Lint Markdowns
         run: yarn lint
-
-  publish:
-    name: Publish to Zenn
-    runs-on: macos-latest
-    needs:
-      - lint
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Check updated articles
-        run: |
-          zsh scripts/check-updated-articles.zsh
-      - name: Publish to Zenn
-        if: ${{ env.updated >= 1 }}
-        run: |
-          git config user.email 'hexium310@gmail.com'
-          git config user.name 'Hexin'
-          git rebase master release
-          git push origin release
-          echo "Update ${{ env.updated }} article(s)"
